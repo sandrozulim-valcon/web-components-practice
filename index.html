@@ -9,9 +9,10 @@
 
   <body>
     <template id="tooltip-template">
+      <slot>Default slot content</slot>
       <span>(?)</span>
     </template>
 
-    <custom-tooltip text="props from outside"></custom-tooltip>
+    <custom-tooltip text="props from outside">Slot content</custom-tooltip>
   </body>
 </html>
